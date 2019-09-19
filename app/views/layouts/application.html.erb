@@ -4,35 +4,33 @@
     <title>Splurty</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <header class="row">
-      <div class="col-3">
-        <%= link_to root_path, class: 'logo' do %>
-       <div class="circle">
-         <br />
-         You know
-         <br />
-         you need
-         <br />
-         to code
-       </div>
-       <% end %>
-      <div class="col col-sm-4 hidden-xs-down slogan">
-        Splurting out unsolicited advice about entrepreneurship since 2016
+<header class="row">
+  <div class="col-3">
+    <%= link_to root_path, class: 'logo' do %>
+      <div class="circle">
+        <br />
+        You know
+        <br />
+        you need
+        <br />
+        to code
       </div>
-      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
-  <!-- Button trigger modal -->
-  <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
-  &nbsp;&nbsp;
-  <%= link_to 'About', about_path %>
-</div>
-      </div>
-    </header>
+    <% end %>
+  </div>
+  <div class="col col-sm-4 hidden-xs-down slogan">
+    Splurting out motivational quotes!
+  </div>
+  <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
+    <!-- Button trigger modal -->
+    <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+    &nbsp;&nbsp;
+    <%= link_to 'About', about_path %>
+  </div>
+</header>
 
 
   
@@ -84,7 +82,7 @@
         <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
       <div class="col-12 col-sm-6 footer-blurb">
-        Proudly hacked in Arizona by <a href="[YOUR_PORTFOLIO_URL]">Malarie McDonald</a><br />
+        Proud build by <a href="[YOUR_PORTFOLIO_URL]">Malarie McDonald</a><br />
         Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
       </div>
         </div>
